@@ -1,4 +1,5 @@
 import { MongoClient } from 'mongodb';
+import makeProductDB from './product-db';
 
 const url = 'mongodb://localhost:27017';
 
@@ -11,4 +12,6 @@ export async function makeDB() {
   return client.db(db);
 }
 
-const 
+const productDB = makeProductDB({ makeDB });
+
+export default productDB;

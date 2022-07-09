@@ -1,4 +1,4 @@
-export default function makeProductDB (makeDB) {
+export default function makeProductDB ({ makeDB }) {
   return Object.freeze({
     findById
   })

@@ -1,0 +1,5 @@
+        req               req  	data
+endpoint > expresscallback > controller > use-case | > entity
+			   res			    |
+			   			    |
+		db	 <    db-adapter <----------
